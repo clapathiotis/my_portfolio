@@ -101,3 +101,313 @@ a:hover {
     overflow: hidden;
     transition: all 0.3 ease-in-out;
 }
+
+.menu-links a {
+    display: block;
+    padding: 10px;
+    text-align: center;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    transition: all 0.3 ease-in-out;
+}
+
+.menu-links li {
+    list-style: none;
+}
+
+.menu-links.open {
+    max-height: 300px;
+}
+
+.mobile-icon.open span:first-child {
+    transform: rotate(45deg) translate(10px, 5px);
+}
+
+.mobile-icon.open span:nth-child(2) {
+    opacity: 0;
+}
+
+.mobile-icon.open span:last-child {
+    transform: rotate(-45deg) translate(10px, -5px);
+}
+
+.mobile-icon span:first-child {
+    transform: none;
+}
+
+.mobile-icon span:first-child {
+    opacity: 1;
+}
+
+.mobile-icon span:first-child {
+    transform: none;
+}
+
+/* SECTIONS */
+
+section {
+    padding-top: 4vh;
+    height: 96vh;
+    margin: 0 10rem;
+    box-sizing: border-box;
+    min-height: fit-content;
+  }
+  
+  .section-container {
+    display: flex;
+  }
+
+  /* PROFILE SECTION */
+
+  #profile {
+    display: flex;
+    justify-content: center;
+    gap: 5rem;
+    height: 80vh;
+  }
+
+  .section__pic-container {
+    display: flex;
+    width: 400px;
+    height: 400px;
+    margin: auto 0;
+  }
+
+  .section__text {
+    align-self: center;
+    text-align: center;
+  }
+
+  .section__text p {
+    font-weight: 600;
+  }
+
+  .section__text_p1 {
+    text-align: center;
+  }
+
+  .section__text_p2 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+  }
+
+  .title {
+    font-size: 3rem;
+    text-align: center;
+  }
+
+  #socials-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 1rem;
+    gap: 1rem;
+  }
+
+
+/* BUTTONS */
+
+.btn-container {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+  }
+  
+  .btn {
+    font-weight: 600;
+    transition: all 300ms ease;
+    padding: 1rem;
+    width: 8rem;
+    border-radius: 2rem;
+  }
+  
+  .btn-color-1,
+  .btn-color-2 {
+    border: black 0.1rem solid;
+  }
+  
+  .btn-color-1:hover,
+  .btn-color-2:hover {
+    cursor: pointer;
+  }
+  
+  .btn-color-1,
+  .btn-color-2:hover {
+    background: black;
+    color: white;
+  }
+  
+  .btn-color-1:hover {
+    background: rgb(0, 0, 0);
+  }
+  
+  .btn-color-2 {
+    background: none;
+  }
+  
+  .btn-color-2:hover {
+    border: rgb(255, 255, 255) 0.1rem solid;
+  }
+  
+  .btn-container {
+    gap: 1rem;
+  }
+
+  /* ICONS */
+
+  .icon {
+    cursor: pointer;
+    height: 2rem;
+  }
+
+  /* ABOUT SECTION */
+  #about {
+    position: relative;
+  }
+
+  .about-containers {
+    gap: 2rem;
+    margin-bottom: 2rem;
+    margin-top: 2rem;
+  }
+
+  .about-details-container {
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .about-containers, .about-details-container {
+    display: flex;
+  }
+
+  .arrow {
+    position: absolute;
+    right: -3rem;
+    bottom: 5rem;
+  }
+
+  .details-container {
+    padding: 5rem;
+    flex: 1;
+    background-color: white;
+    border: rgb(52, 51, 51) 0.2rem solid;
+    border-color: grey;
+    border-radius: 3rem;
+    text-align: center;
+  }
+
+  /* EXPERIENCE SECTION */
+
+  #experience {
+    position: relative;
+  }
+
+  .experience-sub-title {
+    color: grey;
+    font-weight: 600;
+    font-size: 1.8rem;
+    margin-bottom: 2rem;
+  }
+
+  .experience-details-contnainer {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .article-container {
+    display: flex;
+    text-align: initial;
+    flex-wrap: wrap;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: space-around;
+  }
+
+  article {
+    display: flex;
+    width: 8rem;
+    justify-content: space-around;
+    gap: 0.5rem;
+  }
+
+  article .icon {
+    cursor: default;
+  }
+
+  /* PROJECTS SECTION */
+
+  #projects {
+    position: relative;
+  }
+
+  .color-container {
+    border-color: rgb(181, 177, 177);
+    background-color: white;
+  }
+
+  .project-img {
+    border-radius: 2rem;
+    width: 20%;
+    height: 80%;
+  }
+
+  .project-title {
+    margin: 1rem;
+    color: black;
+  }
+
+  .project-btn {
+    color: black;
+    border-color: grey;
+  }
+
+  /* CONTACT */
+
+  #contact {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    height: 70hv;
+  }
+
+  .contact-info-upper-container {
+    display: flex;
+    justify-content: center;
+    border-radius: 2rem;
+    border: grey solid 0.2rem;
+    margin: 2rem auto;
+    padding: 0.5rem;
+  }
+
+  .contact-info-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    margin: 1rem;
+  }
+
+
+  .contact-info-container p {
+    font-size: larger;
+  }
+
+  .contact-icon {
+    cursor: default;
+  }
+
+  .email-icon {
+    height: 2.5rem;
+  }
+
+  /* FOOTER */
+
+  footer {
+    height: 26vh;
+    margin: 0 1rem;
+  }
+
+  footer p {
+    text-align: center;
+  }
