@@ -287,12 +287,12 @@ section {
   }
 
   .details-container {
-    padding: 5rem;
+    padding: 1.5rem;
     flex: 1;
     background-color: white;
     border: rgb(52, 51, 51) 0.2rem solid;
     border-color: grey;
-    border-radius: 3rem;
+    border-radius: 1rem;
     text-align: center;
   }
 
@@ -309,7 +309,7 @@ section {
     margin-bottom: 2rem;
   }
 
-  .experience-details-contnainer {
+  .experience-details-container {
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -348,7 +348,7 @@ section {
 
   .project-img {
     border-radius: 2rem;
-    width: 20%;
+    width: 90%;
     height: 80%;
   }
 
@@ -377,14 +377,14 @@ section {
     border-radius: 2rem;
     border: grey solid 0.2rem;
     margin: 2rem auto;
-    padding: 0.5rem;
+    padding: 0.4rem;
   }
 
   .contact-info-container {
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 1rem;
+    gap: 0.2rem;
     margin: 1rem;
   }
 
