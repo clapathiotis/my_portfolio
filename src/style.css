@@ -147,16 +147,21 @@ a:hover {
 /* SECTIONS */
 
 section {
-    padding-top: 4vh;
-    height: 96vh;
-    margin: 0 10rem;
-    box-sizing: border-box;
-    min-height: fit-content;
-  }
-  
-  .section-container {
-    display: flex;
-  }
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 2s, transform 2s;
+  padding-top: 4vh;
+  height: 96vh;
+  margin: 0 10rem;
+  box-sizing: border-box;
+  min-height: fit-content;
+}
+
+section.show {
+  opacity: 1;
+  transform: translateY(0);
+}
+
 
   /* PROFILE SECTION */
 
