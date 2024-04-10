@@ -182,7 +182,7 @@ section.show {
   img {
     border-radius: 70%;
   }
-  
+
   .section__text {
     align-self: center;
     text-align: center;
@@ -357,8 +357,14 @@ section.show {
 
   .project-img {
     border-radius: 2rem;
-    width: 90%;
-    height: 80%;
+    width: auto;
+    height: auto;
+    max-width: 100%;
+    max-height: 100%;
+  }
+
+  .smaller {
+    height: 10%;
   }
 
   .project-title {
