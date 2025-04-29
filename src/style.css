@@ -220,6 +220,7 @@ section.show {
     display: flex;
     justify-content: center;
     gap: 1rem;
+    margin-top: auto;
   }
   
   .btn {
@@ -247,7 +248,8 @@ section.show {
   }
   
   .btn-color-1:hover {
-    background: rgb(0, 0, 0);
+    background: rgb(74, 74, 74);
+    animation: ease-in;
   }
   
   .btn-color-2 {
@@ -303,6 +305,9 @@ section.show {
     border-color: grey;
     border-radius: 1rem;
     text-align: center;
+    /* justify-content: space-between; */
+    /* height: auto; */
+    position: relative;
   }
 
   /* EXPERIENCE SECTION */
@@ -368,7 +373,7 @@ section.show {
   }
 
   .project-title {
-    margin: 1rem;
+    margin: 3rem;
     color: black;
   }
 
@@ -376,6 +381,46 @@ section.show {
     color: black;
     border-color: grey;
   }
+
+  .btn-container {
+    position: absolute;
+    bottom: 0;
+    margin-bottom: 1rem;
+  }
+
+  .details-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Light grey overlay */
+    z-index: 9999;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .details-overlay.show-details {
+    opacity: 1;
+  }
+  
+  .project-details {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+  }
+  
+  .project-details.show-details {
+    opacity: 1;
+  }
+  
+  
 
   /* CONTACT */
 
@@ -419,7 +464,7 @@ section.show {
   /* FOOTER */
 
   footer {
-    height: 26vh;
+    height: 20vh;
     margin: 0 1rem;
   }
 
