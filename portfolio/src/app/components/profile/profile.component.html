@@ -1,10 +1,15 @@
 <section id="profile">
-    <div class="section__text">
-      <h1 class="title">Christoforos Lapathiotis</h1>
-      <p class="section__text_p2">DevOps / FullStack Engineer</p>
-      <div id="socials-container">
-        <button class="btn btn-color-1" onclick="window.open('assets/images/Resume.pdf')">See my CV</button>
-        <a href="#contact" class="btn btn-color-2">Contact Me</a>
-      </div>
+  <div class="section__text">
+    <!-- Title slides in from the right -->
+    <h1 class="title" @slideInRight>Christoforos Lapathiotis</h1>
+
+    <!-- Subtitle slides in from the left -->
+    <p class="section__text_p2" @slideInLeft>DevOps / FullStack Engineer</p>
+
+    <!-- Buttons slide in from the bottom -->
+    <div id="socials-container">
+      <button class="btn btn-color-1" @slideInUp onclick="window.open('assets/images/Resume.pdf')">See my CV</button>
+      <a href="#contact" class="btn btn-color-2" @slideInUp>Contact Me</a>
     </div>
+  </div>
 </section>
