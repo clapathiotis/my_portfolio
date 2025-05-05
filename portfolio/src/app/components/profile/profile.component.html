@@ -1,18 +1,31 @@
 <section id="profile">
-  <div class="section__text">
-    <!-- Title slides in from the right -->
-    <h1 class="title" @slideInRight>Christoforos Lapathiotis</h1>
-
-    <!-- Subtitle slides in from the left -->
-    <p class="section__text_p2" @slideInLeft>DevOps / FullStack Engineer</p>
-
-    <!-- Buttons slide in from the bottom -->
-    <div id="socials-container">
-      <button class="btn btn-color-1" @slideInUp onclick="window.open('assets/images/Resume.pdf')">See my CV</button>
-      <a href="#contact" class="btn btn-color-2" @slideInUp>Contact Me</a>
+  <div class="profile__container">
+    <!-- Profile Image -->
+    <div class="profile__image">
+      <img src="/assets/images/pp.jpg" alt="Profile Picture" />
     </div>
-  </div>
-  <div class="scroll-indicator">
-    <img src="/assets/images/arrow.png" alt="Arrow Icon" class="icon arrow" onclick="location.href='./#about' ">
+
+    <!-- Profile Text -->
+    <div class="profile__text">
+      <p class="profile__greeting" @slideInRight>Hello, I'm</p>
+      <h1 class="profile__name" @slideInLeft>Christoforos Lapathiotis</h1>
+      <p class="profile__role" @slideInRight>DevOps Engineer</p>
+
+      <!-- Social Media Links -->
+      <div class="social-links" @fadeInSocials>
+        <a href="https://www.linkedin.com/in/christoforos-lapathiotis-451b2a179/" target="_blank" class="social-icon">
+          <i class="fab fa-linkedin"></i>
+        </a>
+        <a href="https://github.com/clapathiotis" target="_blank" class="social-icon">
+          <i class="fab fa-github"></i>
+        </a>
+      </div>
+
+      <!-- Buttons -->
+      <div class="btn-container" @slideInUp>
+        <button class="btn btn-color-2" onclick="window.open('/assets/images/Resume.pdf')">View CV</button>
+        <button class="btn btn-color-1" onclick="location.href='.#contact'">Contact Me</button>
+      </div>
+    </div>
   </div>
 </section>

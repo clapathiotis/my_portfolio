@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
 import { trigger, style, transition, animate, keyframes } from '@angular/animations';
 
 @Component({
@@ -6,6 +6,7 @@ import { trigger, style, transition, animate, keyframes } from '@angular/animati
   standalone: true,
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
+  schemas: [CUSTOM_ELEMENTS_SCHEMA],
   animations: [
     trigger('slideInRight', [
       transition(':enter', [
@@ -35,6 +36,17 @@ import { trigger, style, transition, animate, keyframes } from '@angular/animati
           '2s ease-out',
           keyframes([
             style({ opacity: 0, transform: 'translateY(50px)', offset: 0 }),
+            style({ opacity: 1, transform: 'translateY(0)', offset: 1 })
+          ])
+        )
+      ])
+    ]),
+    trigger('fadeInSocials', [
+      transition(':enter', [
+        animate(
+          '5s ease-out', // Add a 2-second delay before starting the animation
+          keyframes([
+            style({ opacity: 0, transform: 'translateY(20px)', offset: 0 }),
             style({ opacity: 1, transform: 'translateY(0)', offset: 1 })
           ])
         )
