@@ -1,0 +1,142 @@
+#profile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; /* Full viewport height */
+  background-color: #ffffff;
+
+  .profile__container {
+    display: flex;
+    align-items: center; /* Align image and text vertically */
+    justify-content: space-between; /* Space between image and text */
+    gap: 3rem; /* Space between image and text */
+    max-width: 1200px;
+    margin: 0 auto;
+
+    @media (max-width: 768px) {
+      flex-direction: column; /* Stack items vertically on smaller screens */
+      text-align: center;
+    }
+  }
+
+  .profile__image {
+    flex: 0 0 40%; /* Image takes 40% of the container */
+    max-width: 500px; /* Limit the image size */
+    display: flex;
+    justify-content: center;
+  
+    img {
+      width: 100%;
+      height: auto;
+      border-radius: 50%; /* Circular image */
+      box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+      transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
+  
+      &:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+        box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+      }
+    }
+  }
+
+  .profile__text {
+    flex: 0 0 60%; /* Text takes 60% of the container */
+    text-align: center;
+    margin: 0; /* Remove extra margins */
+    padding: 0; /* Remove extra padding */
+  
+    @media (max-width: 768px) {
+      text-align: center;
+    }
+  
+    .profile__greeting {
+      margin-bottom: 0rem;
+      font-size: 1.5rem;
+      color: #666;
+      margin-bottom: 0.3rem; /* Reduce bottom margin */
+    }
+  
+    .profile__name {
+      font-size: 3rem; /* Larger name text */
+      font-weight: bold;
+      color: #333;
+      margin-top: 0rem;
+    }
+  
+    .profile__role {
+      font-size: 1.8rem; /* Larger role text */
+      color: #555;
+      margin-bottom: 1rem; /* Reduce bottom margin */
+    }
+
+    .social-links {
+      display: flex;
+      justify-content: center; /* Align icons to the left */
+      gap: 1rem;
+      margin-bottom: 1.5rem;
+
+      @media (max-width: 768px) {
+        justify-content: center; /* Center icons on smaller screens */
+      }
+
+      .social-icon {
+        font-size: 1.8rem; /* Larger icons */
+        color: #333;
+        transition: transform 0.3s ease, color 0.3s ease;
+
+        &:hover {
+          transform: scale(1.2); /* Slight zoom effect */
+          color: #0077b5; /* LinkedIn blue */
+        }
+
+        &:nth-child(2):hover {
+          color: #333; /* GitHub black */
+        }
+      }
+    }
+
+    .btn-container {
+      display: flex;
+      justify-content: center; /* Center buttons horizontally */
+      gap: 1rem;
+      margin-top: 2rem;
+
+      .btn {
+        font-weight: 600;
+        transition: all 300ms ease;
+        padding: 1rem;
+        width: 8rem;
+        border-radius: 2rem;
+
+        &.btn-color-1,
+        &.btn-color-2 {
+          border: black 0.1rem solid;
+        }
+
+        &.btn-color-1:hover,
+        &.btn-color-2:hover {
+          cursor: pointer;
+        }
+
+        &.btn-color-1,
+        &.btn-color-2:hover {
+          background: black;
+          color: white;
+        }
+
+        &.btn-color-1:hover {
+          background: rgb(74, 74, 74);
+          animation: ease-in;
+        }
+
+        &.btn-color-2 {
+          background: none;
+        }
+
+        &.btn-color-2:hover {
+          border: rgb(255, 255, 255) 0.1rem solid;
+        }
+      }
+    }
+  }
+}

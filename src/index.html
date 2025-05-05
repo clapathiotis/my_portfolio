@@ -74,7 +74,7 @@
         </div>
         <div class="text-container">
           <p>
-            Passionate DevOps Engineer with minor in Computer Science & Engineering, adept at multitasking and collaborating on diverse projects. 
+            Passionate DevOps Engineer with major in Computer Science & Engineering, adept at multitasking and collaborating on diverse projects. 
             Strong record of delivering high-quality results in both independent and team settings, excelling under pressure and consistently meeting deadlines. 
             Eager to continue challenging myself with new opportunities; not afraid to try new technologies.
           </p>
@@ -119,7 +119,7 @@
                 <img src="../assets/checkmark.png" alt="Skill Icon" class="icon"/>
                 <div>
                   <h3>JavaScript</h3>
-                  <p>Experienced</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
               <article>
@@ -140,7 +140,7 @@
                 <img src="../assets/checkmark.png" alt="Skill Icon" class="icon"/>
                 <div>
                   <h3>Test Automation</h3>
-                  <p>Beginner</p>
+                  <p>Intermediate</p>
                 </div>
               </article>
             </div>
@@ -178,7 +178,7 @@
 
     <!-- PROJECTS SECTION -->
     <section id="projects">
-      <p class="section__text_p1">Browse My Projects</p>
+      <p class="section__text_p1">Browse My</p>
       <h1 class="title">Projects</h1>
       <div class="experience-details-container">
         <div class="about-containers">
@@ -195,11 +195,20 @@
                 class="project-img smaller"
               />
             </div>
-            <h2 class="experience-sub-title project-title">ConSEPt</h2>
+            <h2 class="project-title">ConSEPt</h2>
             <div class="btn-container">
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/clapathiotis/ConSEPt', '_blank')">Github</button>
+                
+              <button
+                class="btn btn-color-1"
+                onclick="toggleDetails()">Details</button>
+            </div>
+            <div id="details-overlay">
+              <p class="project-details">Gradution project in partnership with Philips.
+                 Team lead and developer along with 9 other developers for a tool feeding on C/C++ source code and generating a report of possible errors. 
+                Aim of the project was to use this tool on testing Philips MRI machines and other medical equipement mainly for pre-catching any unexpected errors that could happen during operation of patients.</p>
             </div>
           </div>
           <div class="details-container color-container">
@@ -215,6 +224,12 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/clapathiotis/SleepSmarter', '_blank')">Github</button>
+                <button
+                class="btn btn-color-1"
+                onclick="toggleDetails()">Details</button>
+            </div>
+            <div id="details-overlay">
+              <p class="project-details">Your project details here...</p>
             </div>
           </div>
           <div class="details-container color-container">
@@ -230,6 +245,12 @@
               <button
                 class="btn btn-color-2 project-btn"
                 onclick="window.open('https://github.com/NeaGogu/Los-Papires', '_blank')">Github</button>
+                <button
+                class="btn btn-color-1"
+                onclick="toggleDetails()">Details</button>
+            </div>
+            <div id="details-overlay">
+              <p class="project-details">Your project details here...</p>
             </div>
           </div>
         </div>

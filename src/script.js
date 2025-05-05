@@ -6,6 +6,14 @@ function toggleMenu() {
 
 }
 
+function toggleDetails() {
+  var overlay = document.getElementById("details-overlay");
+  var detailsText = document.querySelector(".project-details");
+
+  overlay.classList.toggle("show-details");
+  detailsText.classList.toggle("show-details");
+}
+
 document.addEventListener('DOMContentLoaded', function() {
     var sections = document.querySelectorAll('section');
   
