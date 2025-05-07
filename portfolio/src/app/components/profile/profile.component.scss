@@ -113,7 +113,9 @@
           border: black 0.1rem solid;
         }
 
-        &.btn-color-1:hover,
+        &.btn-color-1:hover {
+          cursor: pointer;
+        }
         &.btn-color-2:hover {
           cursor: pointer;
         }

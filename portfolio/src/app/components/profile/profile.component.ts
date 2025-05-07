@@ -1,5 +1,5 @@
-import { Component, CUSTOM_ELEMENTS_SCHEMA } from '@angular/core';
-import { trigger, style, transition, animate, keyframes } from '@angular/animations';
+import { Component, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit } from '@angular/core';
+import { trigger, style, transition, animate, keyframes, state } from '@angular/animations';
 
 @Component({
   selector: 'app-profile',
@@ -44,7 +44,7 @@ import { trigger, style, transition, animate, keyframes } from '@angular/animati
     trigger('fadeInSocials', [
       transition(':enter', [
         animate(
-          '5s ease-out', // Add a 2-second delay before starting the animation
+          '5s ease-out',
           keyframes([
             style({ opacity: 0, transform: 'translateY(20px)', offset: 0 }),
             style({ opacity: 1, transform: 'translateY(0)', offset: 1 })

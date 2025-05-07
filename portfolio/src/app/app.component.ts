@@ -2,9 +2,10 @@ import { Component, OnInit } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FooterComponent } from './components/footer/footer.component';
 import { HeaderComponent } from './components/header/header.component';
-// import { PortfolioComponent } from './components/portfolio/portfolio.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
+import { TechstackComponent } from './components/techstack/techstack.component';
+
 import { Router, NavigationEnd } from '@angular/router';
 
 // Declare gtag globally
@@ -13,7 +14,7 @@ declare function gtag(...args: any[]): void;
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, ProfileComponent, FooterComponent, AboutMeComponent],
+  imports: [CommonModule, HeaderComponent, ProfileComponent, FooterComponent, AboutMeComponent, TechstackComponent],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })
