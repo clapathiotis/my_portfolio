@@ -54,6 +54,11 @@
       font-size: 1.5rem;
       color: #666;
       margin-bottom: 0.3rem; /* Reduce bottom margin */
+      transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color changes */
+
+      &:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+      }
     }
   
     .profile__name {
