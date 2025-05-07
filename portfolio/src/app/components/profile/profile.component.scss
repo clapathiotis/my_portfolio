@@ -61,12 +61,22 @@
       font-weight: bold;
       color: #333;
       margin-top: 0rem;
+      transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color changes */
+
+      &:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+      }
     }
   
     .profile__role {
       font-size: 1.8rem; /* Larger role text */
       color: #555;
       margin-bottom: 1rem; /* Reduce bottom margin */
+      transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color changes */
+
+      &:hover {
+        transform: scale(1.1); /* Slight zoom effect */
+      }
     }
 
     .social-links {
@@ -115,9 +125,13 @@
 
         &.btn-color-1:hover {
           cursor: pointer;
+          transform: scale(1.1); /* Slight zoom effect */
+          box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
         }
         &.btn-color-2:hover {
           cursor: pointer;
+          transform: scale(1.1); /* Slight zoom effect */
+          box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
         }
 
         &.btn-color-1,
