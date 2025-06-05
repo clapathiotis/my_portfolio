@@ -1,9 +1,11 @@
 #profile {
   display: flex;
+  position: relative;
   justify-content: center;
   align-items: center;
   height: 100vh; /* Full viewport height */
   background-color: #ffffff;
+  padding-top: 20px; /* Add padding to account for the header's height */
 
   .profile__container {
     display: flex;
@@ -21,20 +23,32 @@
 
   .profile__image {
     flex: 0 0 40%; /* Image takes 40% of the container */
-    max-width: 500px; /* Limit the image size */
+    max-width: 600px; /* Increase the maximum width for larger screens */
     display: flex;
     justify-content: center;
-  
+
     img {
-      width: 100%;
-      height: auto;
+      width: 100%; /* Make the image responsive */
+      height: auto; /* Maintain aspect ratio */
       border-radius: 50%; /* Circular image */
       box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2); /* Subtle shadow */
       transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition for hover effects */
-  
+
       &:hover {
         transform: scale(1.1); /* Slight zoom effect */
         box-shadow: 0 12px 25px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+      }
+    }
+
+    @media (max-width: 768px) {
+      img {
+        max-width: 400px; /* Increase image size for smaller screens */
+      }
+    }
+
+    @media (max-width: 480px) {
+      img {
+        max-width: 250px; /* Further increase image size for very small screens */
       }
     }
   }
@@ -44,23 +58,22 @@
     text-align: center;
     margin: 0; /* Remove extra margins */
     padding: 0; /* Remove extra padding */
-  
+
     @media (max-width: 768px) {
       text-align: center;
     }
-  
+
     .profile__greeting {
-      margin-bottom: 0rem;
+      margin-bottom: 0.3rem; /* Reduce bottom margin */
       font-size: 1.5rem;
       color: #666;
-      margin-bottom: 0.3rem; /* Reduce bottom margin */
       transition: transform 0.3s ease, color 0.3s ease; /* Smooth transition for scaling and color changes */
 
       &:hover {
         transform: scale(1.1); /* Slight zoom effect */
       }
     }
-  
+
     .profile__name {
       font-size: 3rem; /* Larger name text */
       font-weight: bold;
@@ -72,7 +85,7 @@
         transform: scale(1.1); /* Slight zoom effect */
       }
     }
-  
+
     .profile__role {
       font-size: 1.8rem; /* Larger role text */
       color: #555;

@@ -1,67 +1,74 @@
-/* filepath: /Users/christopherlapathiotis/Desktop/my_portfolio/portfolio/src/app/components/techstack/techstack.component.scss */
-
 #techstack {
-    text-align: center;
-    padding: 4rem 2rem; /* Add more padding for better spacing */
-    height: 100vh;
+  text-align: center;
+  padding: 5rem 2rem; /* Add consistent padding */
+  padding-bottom: 10rem;
+  position: relative;
 
-    .techstack__title-container {
-      margin-bottom: 2rem;
-    }
-  
+  .techstack__title-container {
+    margin-bottom: 2rem;
+
     .techstack__title {
       font-size: 2.5rem;
       font-weight: bold;
+      color: #333;
     }
-  
-    .techstack__grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensure consistent card width */
-        gap: 2rem;
-        justify-content: center; /* Center the grid items horizontally */
-        align-items: center; /* Center the grid items vertically */
-        max-width: 1200px; /* Limit the grid width */
-        margin: 0 auto; /* Center the grid on the page */
-      }
-  
-    .techstack__card {
-      background: rgba(255, 255, 255, 0.1);
-      border-radius: 30px;
-      padding: 1.5rem;
-      width: 300px; /* Fixed width for all cards */
-      box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
-      transition: transform 0.3s ease, box-shadow 0.3s ease;
-      text-align: center;
-  
-      &:hover {
-        transform: translateY(-5px);
-        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
-      }
-  
-      .techstack__card-title {
-        font-size: 1.5rem;
-        font-weight: bold;
-        margin-bottom: 1rem;
-      }
-  
-      .techstack__list {
-        list-style: none;
-        padding: 0;
-        margin: 0;
-  
-        li {
-          display: flex;
-          align-items: center;
-          justify-content: center; /* Center the text and icon */
-          font-size: 1rem;
-          margin-bottom: 0.5rem;
-  
-          i {
-            font-size: 1.2rem;
-            margin-right: 0.5rem;
-            color: #007bff;
-          }
+  }
+
+  .techstack__grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); /* Ensure consistent card width */
+    gap: 2rem;
+    justify-content: center; /* Center the grid items horizontally */
+    align-items: center; /* Center the grid items vertically */
+    max-width: 1200px; /* Limit the grid width */
+    margin: 0 auto; /* Center the grid on the page */
+
+    @media (max-width: 768px) {
+      grid-template-columns: 1fr; /* Stack cards vertically */
+      gap: 1rem; /* Reduce gap between cards */
+    }
+  }
+
+  .techstack__card {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 30px;
+    padding: 1.5rem;
+    width: 100%; /* Make cards responsive */
+    max-width: 300px; /* Limit the card width */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+    margin: 0 auto; /* Center the card */
+
+    &:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .techstack__card-title {
+      font-size: 1.5rem;
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+
+    .techstack__list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+
+      li {
+        display: flex;
+        align-items: center;
+        justify-content: center; /* Center the text and icon */
+        font-size: 1rem;
+        margin-bottom: 0.5rem;
+
+        i {
+          font-size: 1.2rem;
+          margin-right: 0.5rem;
+          color: #007bff;
         }
       }
     }
   }
+}

@@ -5,6 +5,7 @@ import { HeaderComponent } from './components/header/header.component';
 import { ProfileComponent } from './components/profile/profile.component';
 import { AboutMeComponent } from './components/about-me/about-me.component';
 import { TechstackComponent } from './components/techstack/techstack.component';
+import { ProjectsComponent } from './components/projects/projects.component';
 
 import { Router, NavigationEnd } from '@angular/router';
 
@@ -14,7 +15,12 @@ declare function gtag(...args: any[]): void;
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [CommonModule, HeaderComponent, ProfileComponent, FooterComponent, AboutMeComponent, TechstackComponent],
+  imports: [
+    CommonModule, HeaderComponent, 
+    ProfileComponent, FooterComponent, 
+    AboutMeComponent, TechstackComponent, 
+    ProjectsComponent
+  ],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.scss']
 })

@@ -1,9 +1,11 @@
 import { Component, CUSTOM_ELEMENTS_SCHEMA, AfterViewInit } from '@angular/core';
 import { trigger, style, transition, animate, keyframes, state } from '@angular/animations';
+import { FloatingArrowComponent } from '../shared/floating-arrow/floating-arrow.component';
 
 @Component({
   selector: 'app-profile',
   standalone: true,
+  imports: [FloatingArrowComponent],
   templateUrl: './profile.component.html',
   styleUrls: ['./profile.component.scss'],
   schemas: [CUSTOM_ELEMENTS_SCHEMA],

@@ -1,10 +1,11 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
+import { FloatingArrowComponent } from '../shared/floating-arrow/floating-arrow.component';
 
 @Component({
   selector: 'app-techstack',
   standalone: true,
-  imports: [CommonModule], // Import CommonModule to use NgFor and other directives
+  imports: [CommonModule, FloatingArrowComponent], // Import CommonModule to use NgFor and other directives
   templateUrl: './techstack.component.html',
   styleUrls: ['./techstack.component.scss']
 })
