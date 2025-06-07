@@ -3,27 +3,33 @@
     <h1 class="header__title">Christoforos Lapathiotis</h1>
   </div>
   <div class="header__right">
+    <!-- Desktop Navigation -->
     <nav class="header__nav header__nav--desktop">
       <a href="#about" class="header__link">About</a>
       <a href="#techstack" class="header__link">Tech Stack</a>
       <a href="#projects" class="header__link">Projects</a>
     </nav>
+
+    <!-- Mobile Menu Icon -->
     <button
       class="header__menu-icon"
-      [class.active]="menuOpen"
       (click)="toggleMenu()"
+      [class.active]="menuOpen"
     >
       <span></span>
       <span></span>
       <span></span>
     </button>
+
+    <!-- Mobile Navigation -->
     <nav
       class="header__nav header__nav--mobile"
-      [class.active]="menuOpen"
+      *ngIf="menuOpen"
+      @dropdownItems
     >
-      <a href="#about" class="header__link">About</a>
-      <a href="#techstack" class="header__link">Tech Stack</a>
-      <a href="#projects" class="header__link">Projects</a>
-    </nav>
+      <a href="#about-me" class="header__link" (click)="closeMenu()">About</a>
+      <a href="#techstack" class="header__link" (click)="closeMenu()">Tech Stack</a>
+      <a href="#projects" class="header__link" (click)="closeMenu()">Projects</a>
+  </nav>
   </div>
 </header>
