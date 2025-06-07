@@ -5,25 +5,31 @@
   <div class="header__right">
     <!-- Desktop Navigation -->
     <nav class="header__nav header__nav--desktop">
-      <a href="#about-me" class="header__link">About</a>
+      <a href="#about" class="header__link">About</a>
+      <a href="#techstack" class="header__link">Tech Stack</a>
       <a href="#projects" class="header__link">Projects</a>
-      <a href="#experience" class="header__link">Experience</a>
-      <a href="#contact" class="header__link">Contact</a>
     </nav>
 
     <!-- Mobile Menu Icon -->
-    <button class="header__menu-icon" (click)="toggleMenu()">
+    <button
+      class="header__menu-icon"
+      (click)="toggleMenu()"
+      [class.active]="menuOpen"
+    >
       <span></span>
       <span></span>
       <span></span>
     </button>
 
-    <!-- Mobile Dropdown Navigation -->
-    <nav class="header__nav header__nav--mobile" [@dropdownAnimation]="menuOpen ? 'open' : 'closed'">
-      <a href="#about" class="header__link" (click)="closeMenu()">About</a>
+    <!-- Mobile Navigation -->
+    <nav
+      class="header__nav header__nav--mobile"
+      *ngIf="menuOpen"
+      @dropdownItems
+    >
+      <a href="#about-me" class="header__link" (click)="closeMenu()">About</a>
+      <a href="#techstack" class="header__link" (click)="closeMenu()">Tech Stack</a>
       <a href="#projects" class="header__link" (click)="closeMenu()">Projects</a>
-      <a href="#experience" class="header__link" (click)="closeMenu()">Experience</a>
-      <a href="#contact" class="header__link" (click)="closeMenu()">Contact</a>
-    </nav>
+  </nav>
   </div>
 </header>

@@ -1,18 +1,18 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
 
-import { PortfolioComponent } from './portfolio.component';
+import { FloatingArrowComponent } from './floating-arrow.component';
 
-describe('PortfolioComponent', () => {
-  let component: PortfolioComponent;
-  let fixture: ComponentFixture<PortfolioComponent>;
+describe('FloatingArrowComponent', () => {
+  let component: FloatingArrowComponent;
+  let fixture: ComponentFixture<FloatingArrowComponent>;
 
   beforeEach(async () => {
     await TestBed.configureTestingModule({
-      imports: [PortfolioComponent]
+      imports: [FloatingArrowComponent]
     })
     .compileComponents();
 
-    fixture = TestBed.createComponent(PortfolioComponent);
+    fixture = TestBed.createComponent(FloatingArrowComponent);
     component = fixture.componentInstance;
     fixture.detectChanges();
   });

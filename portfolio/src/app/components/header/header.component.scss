@@ -11,6 +11,11 @@
       font-size: 1.8rem;
       font-weight: bold;
       margin: 0;
+      transition: transform 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        transform: scale(1.1);
+      }
     }
   }
 
@@ -27,33 +32,27 @@
       }
 
       &--mobile {
-        display: none;
+        display: flex;
         flex-direction: column;
         position: absolute;
         top: 100%;
         right: 0;
-        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-        padding: 10px;
-        border-radius: 5px;
+        // box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        padding: 20px;
+        // border-radius: 5px;
         z-index: 1000;
-        opacity: 0;
-        transform: translateY(-10px);
-        transition: opacity 0.3s ease, transform 0.3s ease;
-
-        &.active {
-          display: flex;
-          opacity: 1;
-          transform: translateY(0);
-        }
+        // background-color: #fff;
+        overflow: hidden; /* Prevent content overflow during animation */
       }
 
       .header__link {
         text-decoration: none;
-        color: #000; /* Black text by default */
-        font-size: 1.2rem; /* Slightly larger font size */
+        color: #000;
+        font-size: 1.2rem;
         font-weight: 500;
+        margin-bottom: 15px;
         position: relative;
-        transition: color 0.3s ease, transform 0.3s ease; /* Added transform transition */
+        transition: color 0.3s ease, transform 0.3s ease;
 
         &:hover {
           color: #3498db; /* Blue text on hover */
@@ -99,12 +98,24 @@
         width: 25px;
         height: 3px;
         background-color: #2c3e50;
-        transition: transform 0.3s;
+        transition: transform 0.5s, opacity 0.3s;
+      }
+
+      &.active span:nth-child(1) {
+        transform: translateY(8px) rotate(45deg); /* Top bar transforms into a cross */
+      }
+
+      &.active span:nth-child(2) {
+        opacity: 0; /* Middle bar disappears */
+      }
+
+      &.active span:nth-child(3) {
+        transform: translateY(-8px) rotate(-45deg); /* Bottom bar transforms into a cross */
       }
     }
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: 1024px) {
     .header__nav--desktop {
       display: none;
     }

@@ -1,0 +1,15 @@
+<section id="projects">
+  <div class="projects__container">
+    <h2 class="projects__title">Personal Projects</h2>
+    <div class="projects__grid">
+      <div class="project__card" *ngFor="let project of projects">
+        <img [src]="project.src" alt="{{ project.title }}" class="project__image" />
+        <div class="project__content">
+          <h3 class="project__title">{{ project.title }}</h3>
+          <p class="project__description">{{ project.subtitle }}</p>
+          <button class="project__button" (click)="openGitHub(project.link)">View on GitHub</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
