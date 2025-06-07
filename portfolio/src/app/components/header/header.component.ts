@@ -10,7 +10,8 @@ import { trigger, state, style, transition, animate } from '@angular/animations'
       state('closed', style({
         opacity: 0,
         transform: 'translateY(-10px)',
-        display: 'none'
+        maxHeight: '0',
+        overflow: 'hidden'
       })),
       state('open', style({
         opacity: 1,
@@ -33,9 +34,5 @@ export class HeaderComponent {
 
   toggleMenu(): void {
     this.menuOpen = !this.menuOpen;
-  }
-
-  closeMenu(): void {
-    this.menuOpen = false;
   }
 }
