@@ -1,4 +1,4 @@
-<section id="about-me">
+<section id="about-me" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
   <div class="about-me__title-container">
     <h2 class="about-me__title">About Me</h2>
   </div>

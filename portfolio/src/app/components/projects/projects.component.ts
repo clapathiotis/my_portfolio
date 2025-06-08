@@ -1,14 +1,23 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common'; // Import CommonModule
+import { IntersectionObserverDirective } from '../shared/animations/intersection-observer.directive';
+import { fadeInUpAnimation } from '../shared/animations/animations'; // Import the animation
 
 @Component({
   selector: 'app-projects',
   standalone: true,
-  imports: [CommonModule], // Add CommonModule here
+  imports: [CommonModule, IntersectionObserverDirective], // Add CommonModule here
   templateUrl: './projects.component.html',
-  styleUrls: ['./projects.component.scss']
+  styleUrls: ['./projects.component.scss'],
+  animations: [fadeInUpAnimation] // Use the fadeInUpAnimation
 })
 export class ProjectsComponent {
+  isVisible = false; // Track visibility state
+  
+  onVisibilityChange(visible: boolean): void {
+    this.isVisible = visible; // Update visibility state
+  }
+
   projects = [
     {
       id: 0,

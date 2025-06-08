@@ -1,4 +1,4 @@
-<section id="projects">
+<section id="projects" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
   <div class="projects__container">
     <h2 class="projects__title">Personal Projects</h2>
     <div class="projects__grid">

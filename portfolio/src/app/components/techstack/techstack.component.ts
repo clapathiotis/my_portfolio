@@ -1,15 +1,24 @@
 import { Component } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FloatingArrowComponent } from '../shared/floating-arrow/floating-arrow.component';
+import { fadeInUpAnimation } from '../shared/animations/animations'
+import { IntersectionObserverDirective } from '../shared/animations/intersection-observer.directive'; // Import the directive
 
 @Component({
   selector: 'app-techstack',
   standalone: true,
-  imports: [CommonModule, FloatingArrowComponent], // Import CommonModule to use NgFor and other directives
+  imports: [CommonModule, FloatingArrowComponent, IntersectionObserverDirective], // Import CommonModule to use NgFor and other directives
   templateUrl: './techstack.component.html',
-  styleUrls: ['./techstack.component.scss']
+  styleUrls: ['./techstack.component.scss'],
+  animations: [fadeInUpAnimation]
 })
 export class TechstackComponent {
+  isVisible = false; // Track visibility state
+
+  onVisibilityChange(visible: boolean): void {
+    this.isVisible = visible; // Update visibility state
+  }
+
   technologies = [
     { name: 'Firestore', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/firebase/firebase-plain.svg' },
     { name: 'HTML', icon: 'https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original.svg' },
