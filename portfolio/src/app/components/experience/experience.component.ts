@@ -27,9 +27,11 @@ export class ExperienceComponent {
       points: [
         'Designed and implemented a custom GitLab–AWS CI/CD pipeline tailored to internal data workflows.',
         'Built event-driven pipelines with AWS Step Functions and Glue, cutting Financial Control processing time by 99%.',
+        'Building end-to-end ETL pipelines with Amazon Redshift and PySpark.',
+        'Creating custom Terraform modules to provision and manage the data platform as code.',
         'Working on AML-related developments using REST APIs.'
       ],
-      tags: ['AWS Glue', 'Step Functions', 'GitLab CI/CD', 'Data Governance']
+      tags: ['Terraform', 'Redshift', 'PySpark', 'AWS Glue', 'Step Functions', 'GitLab CI/CD']
     },
     {
       role: 'DevOps Engineer',

@@ -19,8 +19,8 @@ export class TechstackComponent {
   }
 
   groups = [
-    { title: 'Data & Cloud', icon: 'fas fa-cloud', items: ['AWS Glue', 'AWS Step Functions', 'Databricks', 'Python', 'SQL', 'Power BI', 'REST APIs'] },
-    { title: 'DevOps', icon: 'fas fa-gears', items: ['GitLab CI/CD', 'Azure DevOps', 'GitHub', 'Incident management'] },
+    { title: 'Data & Cloud', icon: 'fas fa-cloud', items: ['AWS Glue', 'AWS Step Functions', 'Amazon Redshift', 'PySpark', 'Databricks', 'Python', 'SQL', 'Power BI', 'REST APIs'] },
+    { title: 'DevOps', icon: 'fas fa-gears', items: ['Terraform', 'GitLab CI/CD', 'Azure DevOps', 'GitHub', 'Incident management'] },
     { title: 'Web', icon: 'fas fa-code', items: ['React', 'Angular', 'TypeScript', 'JavaScript', 'HTML/SCSS', 'Node.js', 'Leaflet'] },
     { title: 'Backend & Data stores', icon: 'fas fa-database', items: ['Supabase', 'PostgreSQL', 'MySQL', 'Spring Boot', 'Java', 'Firebase'] },
     { title: 'AI & Automation', icon: 'fas fa-wand-magic-sparkles', items: ['Gemini API', 'Supabase Edge Functions', 'LLM-powered features'] },
