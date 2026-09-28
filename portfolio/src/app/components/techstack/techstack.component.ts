@@ -23,7 +23,7 @@ export class TechstackComponent {
     { title: 'DevOps', icon: 'fas fa-gears', items: ['Terraform', 'GitLab CI/CD', 'Azure DevOps', 'GitHub', 'Incident management'] },
     { title: 'Web', icon: 'fas fa-code', items: ['React', 'Angular', 'TypeScript', 'JavaScript', 'HTML/SCSS', 'Node.js', 'Leaflet'] },
     { title: 'Backend & Data stores', icon: 'fas fa-database', items: ['Supabase', 'PostgreSQL', 'MySQL', 'Spring Boot', 'Java', 'Firebase'] },
-    { title: 'AI & Automation', icon: 'fas fa-wand-magic-sparkles', items: ['Gemini API', 'Supabase Edge Functions', 'LLM-powered features'] },
+    { title: 'AI & Automation', icon: 'fas fa-wand-magic-sparkles', items: ['Amazon Bedrock', 'Custom AI agents', 'IDE agents', 'Gemini API', 'Supabase Edge Functions'] },
     { title: 'Also used', icon: 'fas fa-toolbox', items: ['PEGA', 'Kotlin', 'Flutter', 'Postman', 'WordPress', 'Jupyter'] }
   ];
 }

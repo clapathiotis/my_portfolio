@@ -27,11 +27,11 @@ export class ExperienceComponent {
       points: [
         'Designed and implemented a custom GitLab–AWS CI/CD pipeline tailored to internal data workflows.',
         'Built event-driven pipelines with AWS Step Functions and Glue, cutting Financial Control processing time by 99%.',
-        'Building end-to-end ETL pipelines with Amazon Redshift and PySpark.',
-        'Creating custom Terraform modules to provision and manage the data platform as code.',
-        'Working on AML-related developments using REST APIs.'
+        'Building end-to-end ETL and ELT processes within AWS (Redshift, PySpark, SQL), provisioned with Terraform using custom modules.',
+        'AI Champion for the Data Engineers in the Business Intelligence department: building custom AI agents in AWS with Amazon Bedrock and setting up local IDE agents for the team.',
+        'Responsible for AML projects, including developments using REST APIs.'
       ],
-      tags: ['Terraform', 'Redshift', 'PySpark', 'AWS Glue', 'Step Functions', 'GitLab CI/CD']
+      tags: ['Terraform', 'Amazon Bedrock', 'AI agents', 'Redshift', 'PySpark', 'AWS Glue', 'Step Functions', 'GitLab CI/CD']
     },
     {
       role: 'DevOps Engineer',
