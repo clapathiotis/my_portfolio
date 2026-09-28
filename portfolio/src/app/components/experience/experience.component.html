@@ -1,0 +1,22 @@
+<section id="experience" class="section" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
+  <div class="container">
+    <p class="section__eyebrow">Experience</p>
+    <h2 class="section__title">Where I've worked</h2>
+    <div class="timeline">
+      <article class="timeline__item" *ngFor="let job of jobs">
+        <span class="timeline__dot"></span>
+        <div class="card timeline__card">
+          <div class="timeline__head">
+            <div>
+              <h3>{{ job.role }}</h3>
+              <p class="timeline__company">{{ job.company }}</p>
+            </div>
+            <div class="timeline__meta"><span>{{ job.period }}</span><span>{{ job.location }}</span></div>
+          </div>
+          <ul><li *ngFor="let p of job.points">{{ p }}</li></ul>
+          <div class="timeline__tags"><span class="chip" *ngFor="let t of job.tags">{{ t }}</span></div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>

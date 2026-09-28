@@ -1,15 +1,17 @@
-<section id="projects" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
-  <div class="projects__container">
-    <h2 class="projects__title">Personal Projects</h2>
+<section id="projects" class="section" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
+  <div class="container">
+    <p class="section__eyebrow">Projects</p>
+    <h2 class="section__title">Things I've built</h2>
     <div class="projects__grid">
-      <div class="project__card" *ngFor="let project of projects">
-        <img [src]="project.src" alt="{{ project.title }}" class="project__image" />
-        <div class="project__content">
-          <h3 class="project__title">{{ project.title }}</h3>
-          <p class="project__description">{{ project.subtitle }}</p>
-          <button class="project__button" (click)="openGitHub(project.link)">View on GitHub</button>
+      <a class="card project" *ngFor="let project of projects" [href]="project.link" target="_blank" rel="noopener">
+        <div class="project__top">
+          <span class="project__icon"><i [class]="project.icon"></i></span>
+          <i class="fas fa-arrow-up-right-from-square project__link"></i>
         </div>
-      </div>
+        <h3>{{ project.title }}</h3>
+        <p>{{ project.subtitle }}</p>
+        <div class="project__tags"><span class="chip" *ngFor="let t of project.tags">{{ t }}</span></div>
+      </a>
     </div>
   </div>
 </section>

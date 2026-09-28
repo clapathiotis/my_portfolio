@@ -1,37 +1,27 @@
-<section id="profile">
-  <div class="profile__container">
-    <!-- Profile Image -->
-    <div class="profile__image">
-      <img src="/assets/images/pp.jpg" alt="Profile Picture" @fadeInSocials/>
-    </div>
-
-    <!-- Profile Text -->
-    <div class="profile__text">
-      <p class="profile__greeting" @slideInRight>Hello, I am</p>
-      <h1 class="profile__name" @slideInLeft>Christoforos Lapathiotis</h1>
-      <p class="profile__role" @slideInRight>DevOps Engineer</p>
-
-      <!-- Social Media Links -->
-      <div class="social-links" @fadeInSocials>
-        <a href="https://www.linkedin.com/in/christoforos-lapathiotis-451b2a179/" target="_blank" class="social-icon">
-          <i class="fab fa-linkedin"></i>
-        </a>
-        <a href="https://github.com/clapathiotis" target="_blank" class="social-icon">
-          <i class="fab fa-github"></i>
-        </a>
+<section id="profile" class="hero">
+  <div class="hero__glow hero__glow--1"></div>
+  <div class="hero__glow hero__glow--2"></div>
+  <div class="container hero__inner">
+    <div class="hero__text">
+      <p class="hero__greeting" @slideInRight><span class="hero__dot"></span> Available for interesting projects</p>
+      <h1 class="hero__name" @slideInLeft>Hi, I'm <span class="gradient-text">Christoforos</span> Lapathiotis</h1>
+      <p class="hero__role" @slideInRight>Associate Data Engineer at XM &middot; Data Warehouse</p>
+      <p class="hero__tagline" @slideInRight>
+        I build cloud data pipelines, reliable platforms and full-stack web apps for finance and fintech.
+      </p>
+      <div class="hero__actions" @slideInUp>
+        <a class="btn btn--primary" href="/assets/images/Resume.pdf" target="_blank"><i class="fas fa-file-arrow-down"></i> View CV</a>
+        <a class="btn" href="#contact">Get in touch</a>
       </div>
-
-      <!-- Buttons -->
-      <div class="btn-container" @slideInUp>
-        <button class="btn btn-color-2" onclick="window.open('/assets/images/Resume.pdf')">View CV</button>
-        <button class="btn btn-color-1" onclick="location.href='mailto:clapathiotis@gmail.com?'">
-          Contact Me
-        </button>
+      <div class="hero__social" @fadeInSocials>
+        <a href="https://www.linkedin.com/in/christoforoslapathiotis" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/clapathiotis" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+        <a href="mailto:clapathiotis@gmail.com" aria-label="Email"><i class="fas fa-envelope"></i></a>
+        <span class="hero__loc"><i class="fas fa-location-dot"></i> Nicosia, Cyprus</span>
       </div>
     </div>
-  </div>
-  <!-- Floating Arrow -->
-  <div>
-   <app-floating-arrow [targetSection]="'#about-me'"></app-floating-arrow>
+    <div class="hero__image" @fadeInSocials>
+      <div class="hero__ring"><img src="/assets/images/pp.jpg" alt="Christoforos Lapathiotis" /></div>
+    </div>
   </div>
 </section>

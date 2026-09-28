@@ -1,10 +1,13 @@
-<footer class="app-footer">
-  <div class="footer__content" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
-    <div class="footer__social-icons">
-      <a href="https://www.linkedin.com/in/christoforos-lapathiotis-451b2a179/" target="_blank"><i class="fab fa-linkedin"></i></a>
-      <a href="mailto:clapathiotis@gmail.com" target="_blank"><i class="fas fa-envelope"></i></a>
-      <a href="https://github.com/clapathiotis" target="_blank"><i class="fab fa-github"></i></a>
+<footer id="contact" class="footer section">
+  <div class="container footer__content" [@fadeInUp]="isVisible" (isVisible)="onVisibilityChange($event)" appIntersectionObserver>
+    <p class="section__eyebrow">Contact</p>
+    <h2 class="footer__title">Let's build something <span class="gradient-text">together</span></h2>
+    <p class="footer__text">Open to data engineering roles, freelance web projects and interesting conversations.</p>
+    <a class="btn btn--primary" href="mailto:clapathiotis@gmail.com"><i class="fas fa-envelope"></i> clapathiotis&#64;gmail.com</a>
+    <div class="footer__social">
+      <a href="https://www.linkedin.com/in/christoforoslapathiotis" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+      <a href="https://github.com/clapathiotis" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
     </div>
-    <p>&copy; 2025 Christoforos Lapathiotis</p>
+    <p class="footer__copy">&copy; {{ year }} Christoforos Lapathiotis</p>
   </div>
 </footer>

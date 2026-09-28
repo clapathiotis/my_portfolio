@@ -1,0 +1,10 @@
+.timeline { position: relative; padding-left: 2rem; border-left: 2px solid var(--card-border); display: grid; gap: 1.8rem; }
+.timeline__item { position: relative; }
+.timeline__dot { position: absolute; left: calc(-2rem - 7px); top: 1.8rem; width: 12px; height: 12px; border-radius: 50%; background: var(--gradient); box-shadow: 0 0 0 5px rgba(94, 234, 212, 0.12); }
+.timeline__card { padding: 1.6rem 1.8rem; }
+.timeline__head { display: flex; justify-content: space-between; gap: 1rem; flex-wrap: wrap; margin-bottom: 0.9rem; h3 { font-size: 1.25rem; } }
+.timeline__company { margin: 0.2rem 0 0; color: var(--accent); font-weight: 500; }
+.timeline__meta { display: flex; flex-direction: column; text-align: right; font-size: 0.85rem; color: var(--muted); }
+ul { margin: 0 0 1.1rem; padding-left: 1.1rem; color: var(--muted); font-size: 0.96rem; li { margin-bottom: 0.4rem; } }
+.timeline__tags { display: flex; flex-wrap: wrap; gap: 0.5rem; }
+@media (max-width: 600px) { .timeline__meta { text-align: left; } }

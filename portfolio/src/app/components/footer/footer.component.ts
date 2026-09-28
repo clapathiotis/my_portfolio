@@ -10,7 +10,8 @@ import { fadeInUpAnimation } from '../shared/animations/animations';
   styleUrls: ['./footer.component.scss']
 })
 export class FooterComponent {
-  isVisible = false; // Track visibility state
+  year = new Date().getFullYear();
+  isVisible = false;
 
   onVisibilityChange(visible: boolean): void {
     this.isVisible = visible; // Update visibility state

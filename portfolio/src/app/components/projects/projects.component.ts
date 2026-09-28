@@ -21,31 +21,51 @@ export class ProjectsComponent {
   projects = [
     {
       id: 0,
-      src: 'assets/images/angular.png',
-      title: 'Portfolio Website',
-      subtitle: 'The website you are currently viewing, built with Angular.',
-      link: 'https://github.com/clapathiotis/my_portfolio'
+      icon: 'fas fa-receipt',
+      title: 'Billio',
+      subtitle: 'Household expense tracker with AI bill scanning (Gemini via a Supabase Edge Function), used to share expenses at home.',
+      tags: ['Supabase', 'Gemini API', 'Edge Functions'],
+      link: 'https://github.com/clapathiotis/billio'
     },
     {
       id: 1,
-      src: 'assets/images/philips.png',
-      title: 'ConSEPt: BSc Graduation Project',
-      subtitle: 'Source file automatic test generator and execution tool, built for Philips.',
-      link: 'https://github.com/clapathiotis/consept'
+      icon: 'fas fa-ship',
+      title: 'Container Tracker',
+      subtitle: 'Live container shipment tracking with route map, search by container number or Bill of Lading, and an admin panel that generates tracking emails.',
+      tags: ['React', 'Supabase', 'Leaflet'],
+      link: 'https://github.com/clapathiotis/container-tracker'
     },
     {
       id: 2,
-      src: 'assets/images/SleepSmarter.png',
-      title: 'SleepSmarter',
-      subtitle: 'Healthcare app for sleep apnea patients and related health conditions, built with Java.',
-      link: 'https://github.com/clapathiotis/SleepSmarter'
+      icon: 'fas fa-vial',
+      title: 'ConSEPt: BSc Graduation Project',
+      subtitle: 'Automatic test generator and execution tool for source files, built for Philips.',
+      tags: ['Python', 'Test automation'],
+      link: 'https://github.com/clapathiotis/ConSEPt'
     },
     {
       id: 3,
-      src: 'assets/images/library.jpg',
+      icon: 'fas fa-book-open',
       title: 'Library Management System',
-      subtitle: 'Library management system for a university, built with Angular and Spring Boot.',
+      subtitle: 'University library management system built with Angular and Spring Boot.',
+      tags: ['Angular', 'Spring Boot', 'Java'],
       link: 'https://github.com/clapathiotis/LibraryManagement'
+    },
+    {
+      id: 4,
+      icon: 'fas fa-bed',
+      title: 'SleepSmarter',
+      subtitle: 'App for improving the sleep quality of the elderly, built for a TU/e course.',
+      tags: ['Java', 'Android'],
+      link: 'https://github.com/clapathiotis/SleepSmarter'
+    },
+    {
+      id: 5,
+      icon: 'fab fa-angular',
+      title: 'This Portfolio',
+      subtitle: 'The site you are viewing, built with Angular and deployed on GitHub Pages.',
+      tags: ['Angular', 'SCSS'],
+      link: 'https://github.com/clapathiotis/my_portfolio'
     }
   ];
 
